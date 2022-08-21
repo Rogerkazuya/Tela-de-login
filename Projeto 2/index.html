@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 2 - Tela de Login </title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Armata&family=Nunito:wght@600&family=Raleway:wght@200&display=swap');
+      </style>
+</head>
+<body>
+    <div  id="modal" class="form-box">
+        <img src="./assets/kermit 2.jpg" alt="">
+        <h3>Sign in</h3>
+
+        <form action="" class="login-form">
+        <div class="form-group">
+          <input type="email" name="" id="username" class="form-control" placeholder="Email address" required aria-describedby="helpId">
+            </div>
+            <!-- Senha//// email-->
+            <div class="input">
+              <input type="password" class="form-control" name="" id="input" placeholder="Password" required>
+              <span class="eye" onclick="funcaoAparece()">
+                <i  id="hide1" class="fa-solid fa-eye"></i>
+                <i id="hide2" class="fa-solid fa-eye-slash"></i>
+              </span>
+            </div>
+            <button  class="entrar" type="submit" id="entrar"> Sign in</button>
+            <h5>Forgot your password?</h5>
+
+            <div class="criar-conta">
+                <h4>Don´t have a Column account?</h4>
+                <button class="senha" type="submit">Create new account</button>
+            </div>
+          </form>
+        
+    </div>
+
+
+<script src="./assets/js.js"></script>
+    
+</body>
+</html>
