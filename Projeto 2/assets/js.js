@@ -1,5 +1,6 @@
+
 function funcaoAparece(){
-    var x = document.getElementById('input');
+    var x = document.getElementById('password');
     var y = document.getElementById('hide1');
     var z = document.getElementById('hide2');
 
@@ -13,27 +14,40 @@ function funcaoAparece(){
       z.style.display = "block";
     }
   };
+ 
+
+  function validateFields() {
+    const emailValid = isEmailValid();
+    document.getElementById("recover-password-button").disabled = !emailValid;
+
+    const passwordValid = isPasswordValid();
+    document.getElementById("login-button").disabled = !emailValid || !passwordValid;
+
+}
+
+function isEmailValid() {
+    const email = document.getElementById("email").value;
+    if (!email) {
+        return false;
+    }
+    return validateEmail(email);
+}
+
+function isPasswordValid() {
+    const password = document.getElementById("password").value;
+    if (!password) {
+        return false;
+    }
+    return true;
+}
+
+function validateEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+}
 
 
 
-  const form = document.querySelector('.login-form')
-  const button = document.getElementById('entrar')
-  const animacao = document.getElementsByClassName('.loader')
-  form.addEventListener('submit', paraEnvio);
-
-  function paraEnvio(event){
-    event.preventDefault();
-    console.log('animacao');
-  }
-  
-
-// var btn = document.querySelector('.entrar');
-// var div = document.querySelector('.animacao');
-
-// btn.addEventListener('click', function() {
-//   if(div.style.display === 'block') {
-//     div.style.display = 'none';
-//   } else {
-//     div.style.display = 'block'
-//   }
-// });
+let botao = document.querySelector('login-button');
+botao.addEventListener("click", function(e) {
+  e.preventDefault();
+})
