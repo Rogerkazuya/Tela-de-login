@@ -1,6 +1,5 @@
-
 body {
-	background: rgb(235, 235, 235);	
+    background: rgb(235, 235, 235);
     display: flex;
     align-items: center;
     display: flex;
@@ -9,82 +8,89 @@ body {
 
 }
 
-button[disabled] {
+/*button[disabled] {
     opacity: 0.7;
 }
 button[disabled]:hover {
     cursor: not-allowed;
 }
-
-#hide1{
+*/
+#hide1 {
     display: none;
 }
 
 
-form{
+form {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
+
 .form-box {
     position: absolute;
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 80%;
 }
-img{
+
+img {
     width: 6rem;
     border-radius: 2rem;
 }
 
-h3{
+h3 {
     font-size: 2rem;
     font-family: 'Nunito', sans-serif;
 }
-h4{
+
+h4 {
     color: black;
 }
-h5{
+
+h5 {
     font-size: 1rem;
-    color:rgba(128, 128, 128, 0.603);
+    color: rgba(128, 128, 128, 0.603);
     cursor: pointer;
 }
 
-.form-group{
+.form-group {
     padding: 1rem;
 }
-.eye{
+
+.eye {
     position: absolute;
     padding-right: 1rem;
 }
 
-.form-control{
+.form-control {
     padding: 0.5rem;
     border-radius: 0.5rem;
     border: 1px;
     border-style: 1px solid blue;
     background-color: rgba(129, 129, 129, 0.137);
     width: 19rem;
-    height: 1.5rem;
+    height: 2rem;
     padding: 0.8rem 1rem 0.8rem;
 }
 
-:placeholder-shown{
+:placeholder-shown {
     color: rgb(0, 0, 0);
     font-size: 1rem;
 }
-.input{
+
+.input {
     border-radius: 0.5rem;
     justify-content: right;
     align-items: center;
     display: flex;
 }
-.entrar{
-    background-color:  rgb(82, 82, 255);
+
+.entrar {
+    background-color: rgb(82, 82, 255);
     color: white;
     box-shadow: 0px 0px 2px 0px gray;
     margin-top: 1.5rem;
@@ -92,11 +98,11 @@ h5{
     padding: 1rem 9rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Nunito', sans-serif;
 }
 
-.criar-conta{
+.criar-conta {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -105,7 +111,8 @@ h5{
     box-shadow: 10px #eee;
 }
 
-.senha{justify-content: center;
+.senha {
+    justify-content: center;
     font-size: 1rem;
     border: 1px;
     box-shadow: 0px 0px 2px 0px rgba(153, 153, 153, 0.993);
@@ -115,19 +122,23 @@ h5{
 }
 
 
-.loader{
+.loader {
     animation: is-rotating 1.2s infinite;
-    width: 50px;
-    height: 50px;
-    display: none;
+    width: 40px;
+    height: 40px;
     border: 6px solid #e5e5e5;
     border-top-color: #51d4db;
     border-radius: 10rem;
     transition: scale(2);
+    
 }
 
 @keyframes is-rotating {
+
     to {
-        transform: rotate(1turn);
+        top: 200px;
+        transform: rotate(1turn)
     }
+
+
 }

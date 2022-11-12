@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto 2 - Tela de Login </title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/main.css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./assets/javascript/inicio.js"></script>
     
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Armata&family=Nunito:wght@600&family=Raleway:wght@200&display=swap');
@@ -14,24 +15,25 @@
 </head>
 <body>
     <div  id="modal" class="form-box">
-        <img src="./assets/kermit 2.jpg" alt="">
+        <img src="./assets/img/kermit 2.jpg" alt="">
         <h3>Sign in</h3>
 
         <form action="" class="login-form">
         <div class="form-group">
-          <input type="email" name="email" id="email" class="form-control" onchange="validateFields()" placeholder="Email address">
+          <input type="email" name="email" id="email" class="form-control" placeholder="Email address">
             </div>
             <!-- Senha//// email-->
             <div class="input">
-              <input type="password" class="form-control" name="password" id="password" onchange="validateFields()" placeholder="Password">
+              <input type="password" class="form-control" name="password" id="password"  placeholder="Password">
               <span class="eye" onclick="funcaoAparece()">
                 <i  id="hide1" class="fa-solid fa-eye"></i>
                 <i id="hide2" class="fa-solid fa-eye-slash"></i>
               </span>
             </div>
-            <button  class="entrar" type="submit" id="login-button" disabled="true"> Sign in</button>
+            <div>
+            <button  class="entrar" type="submit" id="loginbutton">Sign in</button>
             <h5 id="recover-password-button">Forgot your password?</h5>
-
+          </div>
             <div class="criar-conta">
                 <h4>Don´t have a Column account?</h4>
                 <button class="senha" type="submit">Create new account</button>
@@ -39,7 +41,7 @@
           </form>
         
     </div>
-<script src="./assets/js.js"></script>
+<script src="./assets/javascript/fim.js"></script>
     
 </body>
 </html>
